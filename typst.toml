@@ -1,0 +1,11 @@
+[package]
+name = "runaround"
+version = "0.1.0"
+entrypoint = "src/lib.typ"
+authors = ["fnecas <https://github.com/fnecas>"]
+license = "MIT"
+description = "Flow text around figures, images and shapes."
+categories = ["layout"]
+keywords = ["wrap", "wrapfig", "wrapfigure", "text wrap", "runaround", "float", "figure", "image", "contour"]
+compiler = "0.15.0"
+exclude = ["docs/*"]

@@ -1,0 +1,7 @@
+# Pinned for reproducible builds of the harness and the WebAssembly plugin.
+# The typst 0.15 crates require Rust 1.92.
+[toolchain]
+channel = "1.92.0"
+profile = "minimal"
+components = ["clippy", "rustfmt"]
+targets = ["wasm32-unknown-unknown"]
