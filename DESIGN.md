@@ -20,7 +20,7 @@ Requires Typst ≥ 0.15.
 ## Usage
 
 ```typ
-#import "@preview/runaround:0.1.0": runaround, wrap
+#import "@preview/runaround:1.0.0": runaround, wrap
 #show: runaround                 // once; place it after your template's show rule
 
 #wrap(mode: "after")[

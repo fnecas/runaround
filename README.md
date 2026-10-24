@@ -16,7 +16,7 @@ Everything after the object — paragraphs, lists, headings — flows around it
 automatically and continues at full width below it.
 
 ```typ
-#import "@preview/runaround:0.1.0": runaround, wrap
+#import "@preview/runaround:1.0.0": runaround, wrap
 #show: runaround
 
 #wrap(mode: "after")[
@@ -54,7 +54,7 @@ or `end`) and shifted with `dx`.
 `runaround`, so document-wide defaults go into the show rule:
 
 ```typ
-#import "@preview/runaround:0.1.0": runaround, wrap
+#import "@preview/runaround:1.0.0": runaround, wrap
 #show: runaround.with(mode: "after", gap: 1.2em, min-width: 8em)
 
 #wrap(rect(width: 3cm, height: 3cm))
@@ -79,7 +79,7 @@ mode, a dictionary of options, or a function that returns either (or `none` to
 leave an element alone):
 
 ```typ
-#import "@preview/runaround:0.1.0": runaround, wrap
+#import "@preview/runaround:1.0.0": runaround, wrap
 #show: runaround.with(auto-wrap: (figure: "after"))
 
 #figure(image("docs/star.png", width: 2.5cm), caption: [Wrapped automatically.])
@@ -114,7 +114,7 @@ from the relative height (0 at the top, 1 at the bottom) to the horizontal
 extent:
 
 ```typ
-#import "@preview/runaround:0.1.0": runaround, wrap
+#import "@preview/runaround:1.0.0": runaround, wrap
 #show: runaround
 
 #wrap(mode: "tight", align: right, contour: y => (60% * (1 - y), 100%))[
